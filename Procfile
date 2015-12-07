@@ -1,1 +1,1 @@
-web: gunicorn itara.wsgi --log-file -
+web: gunicorn Itara.wsgi --log-file -
