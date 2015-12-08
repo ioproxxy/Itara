@@ -18,5 +18,5 @@ from django.contrib import admin
 from properties import views
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)), url(r'^$', views.index, name='index'),
+    url(r'^admin/', include(admin.site.urls)), url(r'^$', views.index, name='index'),url(r'^static/(?P.*)$', django.views.static.serve, {'document_root': settings.STATIC_ROOT}),
 ]
