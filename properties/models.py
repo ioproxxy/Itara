@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Property(models.Model):
-	Price = models.IntegerField(max_length=50)
+	Price = models.IntegerField()
 	ContractType = models.CharField(max_length=50)
 	Type = models.CharField(max_length=50)
 	LocationName= models.CharField(max_length=50)
